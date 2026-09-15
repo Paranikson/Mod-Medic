@@ -18,7 +18,9 @@ from __future__ import annotations
 import json
 import re
 import sys
+import tempfile
 import xml.etree.ElementTree as ET
+import zipfile
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -228,6 +230,59 @@ def load(path: str | Path) -> Workspace:
         tags=data.get("tag_elements", {}),
         language_map=data.get("language_map", {}),
         texture_files=texture_files,
+    )
+
+
+def _find_mcreator_file(root: Path) -> Path:
+    """
+    Locate the workspace .mcreator FILE anywhere under root.
+
+    Students who zip a folder by hand often add an extra wrapper directory,
+    so we search at every depth. The hidden ".mcreator" cache directory
+    matches the same glob, so is_file() is required.
+    """
+    candidates = [p for p in root.rglob("*.mcreator") if p.is_file()]
+    if not candidates:
+        raise FileNotFoundError(
+            f"No .mcreator file found under {root}. "
+            "This does not look like an MCreator workspace."
+        )
+    # If several copies exist, pick the one closest to the top.
+    candidates.sort(key=lambda p: (len(p.relative_to(root).parts), str(p).lower()))
+    return candidates[0]
+
+
+def load_any(path: str | Path) -> Workspace:
+    """
+    Load a workspace from a folder or an exported .zip.
+
+    For a zip, extract to a temp directory, find the .mcreator file at any
+    depth, load it, then delete the temp files.
+    """
+    source = Path(path).expanduser().resolve()
+    if not source.exists():
+        raise FileNotFoundError(f"Nothing exists at {source}")
+
+    if source.is_file() and source.suffix.lower() == ".zip":
+        with tempfile.TemporaryDirectory(prefix="modmedic_") as tmp:
+            with zipfile.ZipFile(source) as zf:
+                zf.extractall(tmp)
+            try:
+                mcreator = _find_mcreator_file(Path(tmp))
+            except FileNotFoundError:
+                raise FileNotFoundError(
+                    f"No .mcreator file found inside {source.name}. "
+                    "If you zipped the folder yourself, make sure the "
+                    "workspace is inside it."
+                ) from None
+            return load(mcreator.parent)
+
+    if source.is_dir():
+        mcreator = _find_mcreator_file(source)
+        return load(mcreator.parent)
+
+    raise FileNotFoundError(
+        f"{source} is not a workspace folder or a .zip file."
     )
 
 
