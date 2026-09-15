@@ -1,0 +1,5 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Workspace snapshots under tests/fixtures/ are part of the suite. Do not ignore them.

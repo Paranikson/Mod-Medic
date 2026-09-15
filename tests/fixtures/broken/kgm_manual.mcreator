@@ -1,0 +1,1140 @@
+{
+  "mod_elements": [
+    {
+      "name": "PinkBlueOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_blue_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kgm_manual/items/pink_blue_ore.json",
+          "src/main/resources/assets/kgm_manual/blockstates/pink_blue_ore.json",
+          "src/main/resources/data/kgm_manual/loot_table/blocks/pink_blue_ore.json",
+          "src/main/resources/assets/kgm_manual/models/block/pink_blue_ore.json",
+          "src/main/resources/assets/kgm_manual/models/item/pink_blue_ore.json",
+          "src/main/java/net/mcreator/kgmmanual/block/PinkBlueOreBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "RawPinkBlue",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_pink_blue",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kgm_manual/items/raw_pink_blue.json",
+          "src/main/resources/assets/kgm_manual/models/item/raw_pink_blue.json",
+          "src/main/java/net/mcreator/kgmmanual/item/RawPinkBlueItem.java"
+        ]
+      }
+    },
+    {
+      "name": "IngotPinkBlue",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ingot_pink_blue",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/item/IngotPinkBlueItem.java",
+          "src/main/resources/assets/kgm_manual/items/ingot_pink_blue.json",
+          "src/main/resources/assets/kgm_manual/models/item/ingot_pink_blue.json"
+        ]
+      }
+    },
+    {
+      "name": "SmeltRawMaterial",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelt_raw_material",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/kgm_manual/advancement/recipes/smelt_raw_material.json",
+          "src/main/resources/data/kgm_manual/recipe/smelt_raw_material.json"
+        ]
+      }
+    },
+    {
+      "name": "CustomWeapon",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_weapon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/item/CustomWeaponItem.java",
+          "src/main/resources/assets/kgm_manual/items/custom_weapon.json",
+          "src/main/resources/assets/kgm_manual/models/item/custom_weapon.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftWeapon",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_weapon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/kgm_manual/recipe/craft_weapon.json"
+        ]
+      }
+    },
+    {
+      "name": "CustomWeaponRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_weapon_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/CustomWeaponRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CustomSoil",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_soil",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/kgm_manual/loot_table/blocks/custom_soil.json",
+          "src/main/resources/assets/kgm_manual/blockstates/custom_soil.json",
+          "src/main/resources/assets/kgm_manual/items/custom_soil.json",
+          "src/main/resources/assets/kgm_manual/models/block/custom_soil.json",
+          "src/main/java/net/mcreator/kgmmanual/block/CustomSoilBlock.java",
+          "src/main/resources/assets/kgm_manual/models/item/custom_soil.json"
+        ]
+      }
+    },
+    {
+      "name": "CustomLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/kgm_manual/loot_table/blocks/custom_log.json",
+          "src/main/java/net/mcreator/kgmmanual/block/CustomLogBlock.java",
+          "src/main/resources/assets/kgm_manual/items/custom_log.json",
+          "src/main/resources/assets/kgm_manual/models/block/custom_log.json",
+          "src/main/resources/assets/kgm_manual/models/item/custom_log.json",
+          "src/main/resources/assets/kgm_manual/blockstates/custom_log.json"
+        ]
+      }
+    },
+    {
+      "name": "CustomGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kgm_manual/models/block/custom_grass.json",
+          "src/main/java/net/mcreator/kgmmanual/block/CustomGrassBlock.java",
+          "src/main/resources/assets/kgm_manual/models/item/custom_grass.json",
+          "src/main/resources/data/kgm_manual/loot_table/blocks/custom_grass.json",
+          "src/main/resources/assets/kgm_manual/items/custom_grass.json",
+          "src/main/resources/assets/kgm_manual/blockstates/custom_grass.json"
+        ]
+      }
+    },
+    {
+      "name": "CustomLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kgm_manual/models/item/custom_leaves.json",
+          "src/main/resources/assets/kgm_manual/items/custom_leaves.json",
+          "src/main/resources/data/kgm_manual/loot_table/blocks/custom_leaves.json",
+          "src/main/resources/assets/kgm_manual/blockstates/custom_leaves.json",
+          "src/main/resources/assets/kgm_manual/models/block/custom_leaves.json",
+          "src/main/java/net/mcreator/kgmmanual/block/CustomLeavesBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "CustomeBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custome_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/kgm_manual/worldgen/biome/custome_biome.json",
+          "src/main/resources/data/kgm_manual/worldgen/placed_feature/custome_biome_tree.json",
+          "src/main/resources/data/kgm_manual/worldgen/configured_feature/custome_biome_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "Rune1block",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rune_1block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/kgm_manual/loot_table/blocks/rune_1block.json",
+          "src/main/resources/assets/kgm_manual/items/rune_1block.json",
+          "src/main/java/net/mcreator/kgmmanual/block/Rune1blockBlock.java",
+          "src/main/resources/assets/kgm_manual/models/item/rune_1block.json",
+          "src/main/resources/assets/kgm_manual/blockstates/rune_1block.json",
+          "src/main/resources/assets/kgm_manual/models/block/rune_1block.json"
+        ]
+      }
+    },
+    {
+      "name": "Rune2block",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rune_2block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kgm_manual/models/block/rune_2block.json",
+          "src/main/java/net/mcreator/kgmmanual/block/Rune2blockBlock.java",
+          "src/main/resources/assets/kgm_manual/models/item/rune_2block.json",
+          "src/main/resources/assets/kgm_manual/items/rune_2block.json",
+          "src/main/resources/assets/kgm_manual/blockstates/rune_2block.json",
+          "src/main/resources/data/kgm_manual/loot_table/blocks/rune_2block.json"
+        ]
+      }
+    },
+    {
+      "name": "Rune3block",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rune_3block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kgm_manual/models/item/rune_3block.json",
+          "src/main/java/net/mcreator/kgmmanual/block/Rune3blockBlock.java",
+          "src/main/resources/data/kgm_manual/loot_table/blocks/rune_3block.json",
+          "src/main/resources/assets/kgm_manual/blockstates/rune_3block.json",
+          "src/main/resources/assets/kgm_manual/items/rune_3block.json",
+          "src/main/resources/assets/kgm_manual/models/block/rune_3block.json"
+        ]
+      }
+    },
+    {
+      "name": "Decoy1Block",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decoy_1_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kgm_manual/models/item/decoy_1_block.json",
+          "src/main/resources/assets/kgm_manual/blockstates/decoy_1_block.json",
+          "src/main/java/net/mcreator/kgmmanual/block/Decoy1BlockBlock.java",
+          "src/main/resources/assets/kgm_manual/models/block/decoy_1_block.json",
+          "src/main/resources/data/kgm_manual/loot_table/blocks/decoy_1_block.json",
+          "src/main/resources/assets/kgm_manual/items/decoy_1_block.json"
+        ]
+      }
+    },
+    {
+      "name": "Rune1blocklit",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rune_1blocklit",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/kgm_manual/loot_table/blocks/rune_1blocklit.json",
+          "src/main/resources/assets/kgm_manual/models/block/rune_1blocklit.json",
+          "src/main/resources/assets/kgm_manual/blockstates/rune_1blocklit.json",
+          "src/main/java/net/mcreator/kgmmanual/block/Rune1blocklitBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Rune2blocklit",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rune_2blocklit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kgm_manual/blockstates/rune_2blocklit.json",
+          "src/main/resources/assets/kgm_manual/models/item/rune_2blocklit.json",
+          "src/main/java/net/mcreator/kgmmanual/block/Rune2blocklitBlock.java",
+          "src/main/resources/assets/kgm_manual/items/rune_2blocklit.json",
+          "src/main/resources/data/kgm_manual/loot_table/blocks/rune_2blocklit.json",
+          "src/main/resources/assets/kgm_manual/models/block/rune_2blocklit.json"
+        ]
+      }
+    },
+    {
+      "name": "Rune3blocklit",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rune_3blocklit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/block/Rune3blocklitBlock.java",
+          "src/main/resources/assets/kgm_manual/items/rune_3blocklit.json",
+          "src/main/resources/assets/kgm_manual/blockstates/rune_3blocklit.json",
+          "src/main/resources/data/kgm_manual/loot_table/blocks/rune_3blocklit.json",
+          "src/main/resources/assets/kgm_manual/models/item/rune_3blocklit.json",
+          "src/main/resources/assets/kgm_manual/models/block/rune_3blocklit.json"
+        ]
+      }
+    },
+    {
+      "name": "SyncRunes",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sync_runes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/SyncRunesProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ResetRunes",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_runes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/ResetRunesProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TouchRuneOne",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "touch_rune_one",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/TouchRuneOneProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TouchRuneTwo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "touch_rune_two",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/TouchRuneTwoProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TouchRuneThree",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "touch_rune_three",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/TouchRuneThreeProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TouchRuneDecoy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "touch_rune_decoy",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/TouchRuneDecoyProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RuneTouched",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rune_touched",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/RuneTouchedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "JudgeBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "judge_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/block/JudgeBlockBlock.java",
+          "src/main/resources/data/kgm_manual/loot_table/blocks/judge_block.json",
+          "src/main/resources/assets/kgm_manual/blockstates/judge_block.json",
+          "src/main/resources/assets/kgm_manual/items/judge_block.json",
+          "src/main/resources/assets/kgm_manual/models/block/judge_block.json",
+          "src/main/resources/assets/kgm_manual/models/item/judge_block.json"
+        ]
+      }
+    },
+    {
+      "name": "JudgeOffering",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "judge_offering",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/JudgeOfferingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RepairShrine",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "repair_shrine",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/RepairShrineProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ShrineDamaged",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shrine_damaged",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/kgm_manual/loot_table/blocks/shrine_damaged.json",
+          "src/main/resources/assets/kgm_manual/items/shrine_damaged.json",
+          "src/main/resources/assets/kgm_manual/models/block/shrine_damaged.json",
+          "src/main/resources/assets/kgm_manual/blockstates/shrine_damaged.json",
+          "src/main/resources/assets/kgm_manual/models/item/shrine_damaged.json",
+          "src/main/java/net/mcreator/kgmmanual/block/ShrineDamagedBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "ShrineRestored",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shrine_restored",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kgm_manual/models/item/shrine_restored.json",
+          "src/main/java/net/mcreator/kgmmanual/block/ShrineRestoredBlock.java",
+          "src/main/resources/assets/kgm_manual/models/block/shrine_restored.json",
+          "src/main/resources/assets/kgm_manual/blockstates/shrine_restored.json",
+          "src/main/resources/data/kgm_manual/loot_table/blocks/shrine_restored.json",
+          "src/main/resources/assets/kgm_manual/items/shrine_restored.json"
+        ]
+      }
+    },
+    {
+      "name": "CustomWither",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_wither",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kgm_manual/items/custom_wither_spawn_egg.json",
+          "src/main/java/net/mcreator/kgmmanual/client/renderer/CustomWitherRenderer.java",
+          "src/main/java/net/mcreator/kgmmanual/entity/CustomWitherEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ResetBattle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_battle",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/ResetBattleProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StartFinalBattle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start_final_battle",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/StartFinalBattleProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ActivationBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "activation_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kgm_manual/items/activation_block.json",
+          "src/main/resources/data/kgm_manual/loot_table/blocks/activation_block.json",
+          "src/main/resources/assets/kgm_manual/models/item/activation_block.json",
+          "src/main/resources/assets/kgm_manual/blockstates/activation_block.json",
+          "src/main/resources/assets/kgm_manual/models/block/activation_block.json",
+          "src/main/java/net/mcreator/kgmmanual/block/ActivationBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "ResetBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kgm_manual/models/block/reset_block.json",
+          "src/main/resources/data/kgm_manual/loot_table/blocks/reset_block.json",
+          "src/main/resources/assets/kgm_manual/blockstates/reset_block.json",
+          "src/main/java/net/mcreator/kgmmanual/block/ResetBlockBlock.java",
+          "src/main/resources/assets/kgm_manual/models/item/reset_block.json",
+          "src/main/resources/assets/kgm_manual/items/reset_block.json"
+        ]
+      }
+    },
+    {
+      "name": "Guardian",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guardian",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/client/renderer/GuardianRenderer.java",
+          "src/main/java/net/mcreator/kgmmanual/entity/GuardianEntity.java",
+          "src/main/resources/assets/kgm_manual/items/guardian_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "ActiveBattleTimer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "active_battle_timer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/ActiveBattleTimerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "VictoryProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "victory_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/VictoryProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CustomDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/world/teleporter/CustomDimensionTeleporter.java",
+          "src/main/java/net/mcreator/kgmmanual/world/teleporter/CustomDimensionPortalShape.java",
+          "src/main/resources/assets/kgm_manual/blockstates/custom_dimension_portal.json",
+          "src/main/resources/assets/kgm_manual/models/block/custom_dimension_portal_ns.json",
+          "src/main/java/net/mcreator/kgmmanual/world/dimension/CustomDimensionDimension.java",
+          "src/main/resources/data/kgm_manual/dimension/custom_dimension.json",
+          "src/main/resources/assets/kgm_manual/models/item/custom_dimension.json",
+          "src/main/java/net/mcreator/kgmmanual/block/CustomDimensionPortalBlock.java",
+          "src/main/resources/assets/kgm_manual/models/block/custom_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/kgmmanual/item/CustomDimensionItem.java",
+          "src/main/resources/assets/kgm_manual/items/custom_dimension.json",
+          "src/main/resources/data/kgm_manual/dimension_type/custom_dimension.json"
+        ]
+      }
+    },
+    {
+      "name": "AwakenGuardian",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "awaken_guardian",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/AwakenGuardianProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GuardianeResetBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guardiane_reset_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/block/GuardianeResetBlockBlock.java",
+          "src/main/resources/data/kgm_manual/loot_table/blocks/guardiane_reset_block.json",
+          "src/main/resources/assets/kgm_manual/models/block/guardiane_reset_block.json",
+          "src/main/resources/assets/kgm_manual/blockstates/guardiane_reset_block.json",
+          "src/main/resources/assets/kgm_manual/models/item/guardiane_reset_block.json",
+          "src/main/resources/assets/kgm_manual/items/guardiane_reset_block.json"
+        ]
+      }
+    },
+    {
+      "name": "GuardianReset",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guardian_reset",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/kgmmanual/procedures/GuardianResetProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "finalBattleState",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "runesLit",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "clickedRune",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "wrongResets",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "trialOneDone",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "offeringsCorrect",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "judgeAttempts",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "trialTwoDone",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "shrinesRestored",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "trialThreeDone",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "trialsCompleted",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "GuardianAwoken",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "battleTimeSeconds",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "secondCounter",
+      "type": "number",
+      "scope": "map",
+      "value": "20.0"
+    },
+    {
+      "name": "waveCooldownSeconds",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "finalRewardGIven",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "playerAttempts",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:PinkBlueOre"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:PinkBlueOre"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:CustomWeapon"
+    ],
+    "ITEMS:kgm_manual:custom_weapon_repair_items": [
+      "~CUSTOM:IngotPinkBlue"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:CustomSoil",
+      "~CUSTOM:CustomGrass"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.kgm_manual.pink_blue_ore": "Pink Blue Ore",
+      "item.kgm_manual.raw_pink_blue": "Raw Pink Blue",
+      "item.kgm_manual.ingot_pink_blue": "Ingot Pink Blue",
+      "item.kgm_manual.custom_weapon": "Lightning Blade",
+      "item.kgm_manual.custom_soil": "Custom Soil",
+      "item.kgm_manual.custom_log": "Custom Log",
+      "item.kgm_manual.custom_grass": "Custom Grass",
+      "item.kgm_manual.custom_leaves": "Custom Leaves",
+      "biome.kgm_manual.custome_biome": "Custome Biome",
+      "item.kgm_manual.rune_1block": "Rune 1block",
+      "item.kgm_manual.rune_2block": "Rune 1block",
+      "item.kgm_manual.rune_3block": "Rune 1block",
+      "item.kgm_manual.decoy_1_block": "Rune 1block",
+      "item.kgm_manual.rune_1blocklit": "Rune 1block",
+      "item.kgm_manual.rune_2blocklit": "Rune 1block",
+      "item.kgm_manual.rune_3blocklit": "Rune 1block",
+      "item.kgm_manual.judge_block": "Judge Block",
+      "item.kgm_manual.shrine_damaged": "Shrine Damaged",
+      "item.kgm_manual.shrine_restored": "Shrine Restored",
+      "entity.kgm_manual.custom_wither": "Custom Wither",
+      "item.kgm_manual.activation_block": "Activation Block",
+      "item.kgm_manual.reset_block": "Reset Block",
+      "entity.kgm_manual.guardian": "Guardian",
+      "item.kgm_manual.custom_dimension": "Custom Dimension Portal Igniter",
+      "item.kgm_manual.guardiane_reset_block": "Guardiane Reset Block",
+      "item.kgm_manual.guardian_reset": "Guardian Reset"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/kgmmanual/init/KgmManualModBlocks.java",
+      "src/main/java/net/mcreator/kgmmanual/init/KgmManualModItems.java",
+      "src/main/java/net/mcreator/kgmmanual/init/KgmManualModEntities.java",
+      "src/main/java/net/mcreator/kgmmanual/init/KgmManualModEntityRenderers.java",
+      "src/main/java/net/mcreator/kgmmanual/KgmManualMod.java",
+      "src/main/java/net/mcreator/kgmmanual/network/KgmManualModVariables.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/kgmmanual/init/KgmManualModModels.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/kgmmanual/init/KgmManualModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "kgm_manual",
+    "modName": "KGM Manual",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.8",
+    "modElementsPackage": "net.mcreator.kgmmanual"
+  },
+  "mcreatorVersion": 202600114619
+}
