@@ -100,6 +100,34 @@ class Element:
                     words.add(value)
         return words
 
+    def event_trigger(self) -> str | None:
+        """The Blockly trigger this procedure is attached to, if any."""
+        xml = self.definition.get("procedurexml")
+        if not isinstance(xml, str) or not xml.strip():
+            return None
+        try:
+            root = ET.fromstring(xml)
+        except ET.ParseError:
+            return None
+        for node in root.iter():
+            tag = node.tag.rsplit("}", 1)[-1]
+            if tag != "block" or node.get("type") != "event_trigger":
+                continue
+            for child in node:
+                if (
+                    child.tag.rsplit("}", 1)[-1] == "field"
+                    and child.get("name") == "trigger"
+                    and child.text
+                ):
+                    return child.text
+            return None
+        return None
+
+    @property
+    def has_global_trigger(self) -> bool:
+        trigger = self.event_trigger()
+        return trigger is not None and trigger != "no_ext_trigger"
+
 
 @dataclass
 class Variable:

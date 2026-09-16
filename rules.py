@@ -142,12 +142,15 @@ def w002_procedure_never_used(ws: Workspace) -> list[Finding]:
     """
     W002 - a procedure is never attached to anything and never called.
 
-    It counts as used if some *other* element either has a procedure-hook
-    pointing at it, or mentions its name in Blockly XML.
+    It counts as used if it has a global event trigger, or if some *other*
+    element either has a procedure-hook pointing at it, or mentions its
+    name in Blockly XML.
     """
     findings: list[Finding] = []
     for el in ws.elements:
         if el.type != "procedure":
+            continue
+        if el.has_global_trigger:
             continue
         used = False
         for other in ws.elements:

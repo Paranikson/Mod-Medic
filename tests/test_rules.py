@@ -14,7 +14,7 @@ FIXTURES = Path(__file__).resolve().parent / "fixtures"
 
 # Rule ids this module asserts on. test_every_rule_is_registered fails if
 # one of these is silently dropped from ALL_RULES.
-REFERENCED_RULE_IDS = ("E002", "E003", "E004", "W001")
+REFERENCED_RULE_IDS = ("E002", "E003", "E004", "W001", "W002")
 
 
 @pytest.fixture(scope="module")
@@ -93,6 +93,21 @@ def test_broken_missing_texture(broken_findings):
 def test_duplicate_display_names(working_findings, broken_findings):
     assert 7 in _w001_key_counts(working_findings)
     assert 7 in _w001_key_counts(broken_findings)
+
+
+def test_global_trigger_procedure_not_flagged(working_findings):
+    w002 = [f.element for f in working_findings if f.rule_id == "W002"]
+    assert "AwakenGuardian" not in w002
+    assert w002 == []
+
+
+def test_event_trigger_parsing(working_ws):
+    awaken = working_ws.by_name("AwakenGuardian")
+    hooked = working_ws.by_name("TouchRuneOne")
+    assert awaken is not None
+    assert hooked is not None
+    assert awaken.event_trigger() == "player_ticks"
+    assert hooked.event_trigger() == "no_ext_trigger"
 
 
 def test_every_rule_is_registered():
